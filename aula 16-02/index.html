@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 3</title>
+  </head>
+  <body>
+    <h3>Cadastro de Perfil</h3>
+    <form>
+     
+
+
+
+      <fieldset>
+
+        <legend>Dados pessoais</legend>
+
+        <label for="nome">Nome </label>
+        <input type="text" name="nome" id="nome" minlength="1" maxlength="70" />
+        <!-- label for está vinculado ao input com id nome, por isso for e id devem ser iguais, quando clicar no texto, vai direto pro input -->
+        <label for="senha"> Senha </label>
+        <input type="password" id="senha" />
+        <br />
+
+        <label for="email"> Email </label>
+        <input type="email" id="email" /> <br />
+
+        <label for="telefone">Telefone </label>
+        <input type="tel" id="telefone" /> <br />
+
+        <label for="instagram">URL do instagram: </label>
+        <input type="url" id="instagram" /> <br />
+
+        <label for="idade">Idade: </label>
+        <input type="number" min="3" max="110" id="idade" /> <br />
+
+        <label for="nasc">Data de nascimento: </label>
+        <input type="date" min="2000-01-01" max="2023-02-16" id="nasc" />
+
+        <label for="hora">Hora de nascimento: </label>
+        <input type="time" id="hora" /> <br />
+
+        <label for="foto">Foto de Perfil </label>
+        <input type="file" multiple accept=".png" id="foto" /> <br />
+        <!-- accept aceita apenas o formato que colocar, nesse caso só png. o multiple é varios arquivos -->
+
+        <label for="sexo"> Sexo: </label>
+
+        <input type="radio" name="sexo" checked id="sexoM" />
+        <label for="sexoM">Masculino </label>
+        <!-- O name precisa ser igual nos dois, o checked já deixa marcado previamente -->
+        <input type="radio" name="sexo" id="sexoF" />
+        <label for="sexoF">Feminino </label><br />
+      </fieldset>
+
+      <fieldset>
+
+        <legend> Outras informações</legend>
+      Interesses:
+
+      <label for="humanas">Humanas </label>
+
+      <input type="checkbox" checked id="humanas" />
+      <label for="exatas"> Exatas </label>
+      <input type="checkbox" id="exatas" />
+      <label for="linguagens">Linguagens </label>
+      <input type="checkbox" id="linguagens" />
+      <label for="biologicas"> Biológicas </label>
+      <input type="checkbox" id="biologicas" />
+      <br />
+
+      <label for="cor"> Escolha sua cor favorita: </label>
+      <input type="color" id="cor" /> <br />
+
+      Nível de inglês 1 <input type="range" min="0" max="10" /> 10 <br />
+
+      Escondido:
+
+      <input type="hidden" value="12" /> <br />
+
+      <!-- Esconde o valor  -->
+
+      <label for="bio">Conte um pouco sobre você: </label> <br />
+
+      <textarea rows="4" cols="40" placeholder="Digite aqui" id="bio">
+      </textarea>
+      <br />
+
+      Escolaridade
+
+      <select>
+        <option disabled selected>Selecione uma opção</option>
+        <!-- desabita a opção e já deixa ela marcada -->
+        <option>Ensino Fundamental</option>
+        <option>Ensino Médio</option>
+        <option>Ensino Superior Incompleto</option>
+        <option>Ensino Superior Completo</option>
+      </select>
+    </fieldset>
+
+      <input type="button" /> Botão que não faz nada
+      <input type="submit" /> Botão que envia <input type="reset" /> Botão que
+      reseta
+    </form>
+  </body>
+</html>
